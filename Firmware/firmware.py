@@ -36,10 +36,10 @@ encoder_handler.map = [
 
 keyboard.keymap = [
     [
-        KC.LCTL(KC.S),   KC.LCTL(KC.Z),   KC.LCTL(KC.Y),   KC.LGUI(KC.L),   # Row 0
-        KC.MPRV,         KC.MPLY,         KC.MNXT,         KC.PGUP,         # Row 1
-        KC.LGUI(KC.N2),  KC.UP,           KC.LGUI(KC.N1),  KC.PGDN,         # Row 2
-        KC.LEFT,         KC.DOWN,         KC.RIGHT,        KC.ENTER        # Row 3
+        KC.LCTL(KC.S),   KC.LCTL(KC.Z),   KC.LCTL(KC.Y),   KC.LGUI(KC.L),
+        KC.MPRV,         KC.MPLY,         KC.MNXT,         KC.PGUP,
+        KC.LGUI(KC.N2),  KC.UP,           KC.LGUI(KC.N1),  KC.PGDN,
+        KC.LEFT,         KC.DOWN,         KC.RIGHT,        KC.ENTER
     ]
 ]
 
