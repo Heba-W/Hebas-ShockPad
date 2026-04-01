@@ -16,9 +16,7 @@ It is a 4x3 macropad made using KMK firmware and the Seeed XIAO RP2040.
 
 ## Layout
 |   Save   |    Undo    | Close | Lock  |
------------------------------------------
 | Spotify  |   Chrome   | PgUp  | PgDn  |
------------------------------------------
 | Previous | Play/Pause | Next  | Enter |
 
 ## Firmware
