@@ -1,8 +1,9 @@
-# Firmware for 4x3 macropad with:
+# Welcome to my macropad called Heba's ShockPad (inspo from tranformers)
+# This is the firmware for my 4x3 macropad with:
 # - Media controls (Play/Pause, Next, Prev)
 # - App shortcuts using windows taskbar (Ex. Chrome, Spotify)
 # - Rotary encoder (volume control)
-# - 0.91" OLED display with startup message, clock, and volume bar
+# - 0.91" OLED display with startup message, clock, and volume bar!
 
 # Importing necessary modules
 import board
@@ -32,7 +33,7 @@ keyboard.modules.append(encoder_handler)
 encoder_handler.pins = (
     (board.GP7, board.GP8, False), # 2 pins, no button
 )
-# Volume is handled manually in oled_encoder_callback
+# Note: Volume is handled manually in oled_encoder_callback
 
 # OLED Display (0.91" SSD1306)
 i2c = busio.I2C(scl=board.GP9, sda=board.GP10)  # 2 pins
@@ -49,7 +50,7 @@ keyboard.extensions.append(display)
 # Helper functions for OLED
 # Function to display the changing volume
 def update_volume(vol_percent):
-    # Horizontal bar for volume (maximum display of 10 blocks)
+    # Horizontal bar for volume (Display of 10 blocks)
     blocks = int(vol_percent / 10)
     bar = "■" * blocks + "□" * (10 - blocks)
     display.entries[1].text = f"VOL: [{bar}] {vol_percent}%"
@@ -92,12 +93,12 @@ def oled_encoder_callback(encoder, direction):
 # Calling the function
 encoder_handler.on_turn = oled_encoder_callback
 
-# Main Loop: Continously updating the clock very second
+# Main Loop: Continously updating and displaying the clock
 def main_loop():
     update_clock()
     time.sleep(1)  # Update every 1 sec
 keyboard.on_main_loop = main_loop
 
-# Starting KMK keyboard
+# Start the KMK keyboard:
 if __name__ == '__main__':
     keyboard.go()
