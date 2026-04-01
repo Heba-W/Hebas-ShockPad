@@ -17,7 +17,9 @@ It is a compact 4x3 macropad built using KMK firmware and the Seeed XIAO RP2040.
 
 ## Layout
 [  Save   ][    Undo    ][ Close ][ Lock  ]
+
 [ Spotify ][   Chrome   ][ PgUp  ][ PgDn  ]
+
 [Previous ][ Play/Pause ][ Next  ][ Enter ]
 
 ## Firmware
@@ -48,7 +50,7 @@ Located in /production:
 * 4x M3x16mm screws
 * 4x M3x5mx4mm heatset inserts
 
-## Notes
+### Other Notes
 * The OLED clock is calculated in the firmware (CST offset).
 * The Volume bar reflects the encoder input.
 * The app shortcuts use Windows taskbar bindings (Win + number).
