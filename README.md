@@ -1,19 +1,18 @@
 # ShockPad Macropad
 This is my submission for HackPad.
-It is a compact 4x3 macropad built using KMK firmware and the Seeed XIAO RP2040.
+It is a 4x3 macropad made using KMK firmware and the Seeed XIAO RP2040.
 
 ## Features
 * Media Controls
-  * Play/Pause, Next, Previous to navigate through music
-* App Shortcuts
-  * Launch apps using Windows taskbar shortcuts
+  * Play/Pause, Next, Previous for music nav
+* App shortcuts using Windows taskbar
 * Rotary Encoder (Volume Control)
-  * Turn right: Volume Up
-  * Turn left: Volume Down
-* OLED Display (0.91" SSD1306)
+  * Rotate right: Volume Up
+  * Rotate left: Volume Down
+* OLED Display (0.91" SSD1306) that shows:
   * Startup message
-  * Live clock (CST timezone)
-  * Visual volume bar that updates as you turn the encoder
+  * Clock (CST timezone)
+  * Volume bar that updates as you turn the encoder
 
 ## Layout
 [  Save   ][    Undo    ][ Close ][ Lock  ]
@@ -24,22 +23,22 @@ It is a compact 4x3 macropad built using KMK firmware and the Seeed XIAO RP2040.
 
 ## Firmware
 * Built using KMK
-  * Key matrix scanning (4x3)
+  * Key matrix (4x3)
   * Media keys
   * Encoder input
   * OLED display updates
-Firmware file can be found in the /firmware folder (main.py).
 
 ## PCB
 
 ### Schematic
-! (images/pcb_schematic_heba.png)
-This is the schematic for the 4x3 macropad, including the XIAO RP2040, key matrix, rotary encoder, and OLED connections.
+![Schematic](images/pcb_schematic_heba.png)
+This is the schematic for the 4x3 ShockPad.
 
 ### PCB Layout
 Empty PCB
 
 ## CAD
+![Model](shockpad_model.png)
 
 ## Production Files
 Located in /production:
@@ -58,6 +57,5 @@ Located in /production:
 * 4x M3x5mx4mm heatset inserts
 
 ### Other Notes
-* The OLED clock is calculated in the firmware (CST offset).
-* The Volume bar reflects the encoder input.
+* The OLED clock is in the firmware (with an offset to get CST).
 * The app shortcuts use Windows taskbar bindings (Win + number).
