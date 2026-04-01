@@ -32,6 +32,13 @@ Firmware file can be found in the /firmware folder (main.py).
 
 ## PCB
 
+### Schematic
+! (images/pcb_schematic_heba.png)
+This is the schematic for the 4x3 macropad, including the XIAO RP2040, key matrix, rotary encoder, and OLED connections.
+
+### PCB Layout
+Empty PCB
+
 ## CAD
 
 ## Production Files
@@ -42,8 +49,8 @@ Located in /production:
 
 ## Bill of Materials (BOM)
 * 1 Seeed XIAO RP2040
-* 20x through-hole 1N4148 Diodes
-* 16x MX-Style switches
+* 12x through-hole 1N4148 Diodes
+* 12x MX-Style switches
 * 1x EC11 Rotary encoder
 * 1x 0.91 inch OLED display
 * 12x white blank DSA keycaps
