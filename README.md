@@ -33,7 +33,7 @@ It is a 4x3 macropad made using KMK firmware and the Seeed XIAO RP2040.
 This is the schematic for the 4x3 ShockPad.
 
 ### PCB Layout
-Empty PCB
+Empty PLACEHOLDER. WILL ADD BECAUSE FILE ISN'T LOADING AT THE MOMENT
 
 ## CAD
 ![Model](images/shockpad_model.png)
