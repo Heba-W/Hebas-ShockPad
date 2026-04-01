@@ -36,7 +36,7 @@ This is the schematic for the 4x3 ShockPad.
 Empty PCB
 
 ## CAD
-![Model](shockpad_model.png)
+![Model](images/shockpad_model.png)
 
 ## Production Files
 Located in /production:
